@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    </style>
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    
+</head>
+<body>
+
+    <!-------- Header --------->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <iconify-icon class="ic" icon="ic:round-close" onclick="hideMenu()" ></iconify-icon>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <iconify-icon class="ic" icon="material-symbols:menu-rounded" onclick="showMenu()" ></iconify-icon>
+        </nav>
+
+        <h1>Our Certificate & Online Programs for 2021</h1>
+   
+
+    </section>
+  
+<!-------- Blog --------->
+   <section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="./images/certificate.jpg" alt="">
+            <h2>Our Certificate & Online Programs for 2021</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum doloremque provident amet maiores cum ex ipsa sed consectetur voluptate! Voluptates asperiores debitis nam eos, commodi doloremque quia cupiditate repellendus!Lorem</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis consectetur dolorum voluptatum necessitatibus nostrum, dolorem quod tempore adipisci officiis reprehenderit enim iste in quis doloremque accusamus veniam saepe nemo totam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique porro totam, doloremque ut, esse soluta repellat maiores corrupti pariatur cupiditate voluptatibus velit excepturi voluptatem, nam tenetur aut obcaecati rerum animi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit adipisci fugit, maxime neque culpa architecto magnam provident nobis ratione sapiente laudantium iste blanditiis rem ut nostrum ducimus. Animi, et optio!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dignissimos minus dicta necessitatibus placeat accusamus, ipsam quos debitis magni eius modi beatae doloremque! Nemo esse consequatur eaque veniam ipsa vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam ratione perspiciatis optio accusamus voluptatem labore, iure officiis neque! Facere reiciendis numquam quasi totam minima hic provident rem? Reiciendis, perspiciatis.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur qui earum, assumenda doloremque labore delectus quidem beatae dicta? Nulla ratione corrupti ducimus minima blanditiis culpa incidunt quis ex enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nam minima eos perspiciatis optio libero animi, rerum inventore omnis sint dolore aperiam iusto consequatur amet minus magni ipsa vero natus.</p>
+        
+        
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter E-mail">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn" > Post Comment</button>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Bussiness Analyties</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>24</span>
+            </div>
+            <div>
+                <span>Jornalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+
+        </div>
+       
+    </div>
+
+   </section>
+    
+ 
+
+<!-------- Footer --------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fuga necessitatibus libero,  vero ex esse sapiente magnam, <br> reiciendis nemo dolorem iusto nisi, unde nostrum fugiat, ut odio quis amet.</p>
+    <div class="icons">
+        <iconify-icon class="fo" icon="mdi:facebook"></iconify-icon>
+        <iconify-icon class="fo" icon="mdi:twitter"></iconify-icon>
+        <iconify-icon class="fo" icon="mdi:instagram"></iconify-icon>
+        <iconify-icon class="fo" icon="mdi:linkedin"></iconify-icon>
+    </div>
+    <p class="me">Made by Purnima</p>
+</section>
+
+
+
+
+    
+<!-------- Java for toggel menu --------->
+
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
